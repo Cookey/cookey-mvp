@@ -7,8 +7,11 @@ pragma solidity ^0.5.0;
 // Total supply: 31,515,110.525000000000000000
 // Decimals    : 18
 //
-// Bart Coelus is Awesome
-// (c) BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
+// Shout out to the most awesome team that makes this happen! Thanks brothers!
+// Steff (Germany) - Hamzat (Nigeria) - Robin Held (UK) - J (Germany) - Jesse (USA) - Flipsum/master (Slovenia) 
+// O yes, Bart Coelus is awesome too - and that happends to be me
+//
+// (c) ERC20 standard / BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
 // ----------------------------------------------------------------------------
 
 
