@@ -80,10 +80,11 @@ contract Cookey {
         //return files[_fileID].beneficiary;}
     } }
     
-    function getMyFiles (uint _fileID) public view returns (string memory)
+    function getMyFiles (uint _fileID) public view returns(string memory IPFShash, string memory FileTopic)
     {
         if (files[_fileID].beneficiary == msg.sender)
-     {return (files[_fileID].IPFShash);
+      {return (files[_fileID].IPFShash, files[_fileID].FileTopic);
+
          
      }
          else
