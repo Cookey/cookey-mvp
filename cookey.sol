@@ -24,3 +24,26 @@ contract Cookey {
         numVaults = 1;
         fileID = 1;
     }
+
+//this function is used to prevent others - but owner - to evoke certain functions 
+     modifier onlyOwner {
+     require(msg.sender == owner);
+     _;
+     }
+
+//define the structure (attributes) of the file smart asset that will be stored inside the Cookey vault
+    struct file
+        {
+        string IPFShash;
+        string FileTopic;
+        address sender;
+        address beneficiary;
+        }
+    
+       struct Vault {
+        address addr;
+        uint numFiles;
+        mapping (uint => file) files;
+    }
+    
+    mapping(uint=>file) files;
