@@ -24,14 +24,15 @@ contract Cookey {
         numVaults = 1;
         fileID = 1;
     }
-
+     
 //this function is used to prevent others - but owner - to evoke certain functions 
      modifier onlyOwner {
-     require(msg.sender == owner);
-     _;
+  require(msg.sender == owner);
+  _;
      }
-
-//define the structure (attributes) of the file smart asset that will be stored inside the Cookey vault
+     
+    //define the structure (attributes) of the file smart asset that will be stored inside the Cookey
+    //vault
     struct file
         {
         string IPFShash;
@@ -44,11 +45,12 @@ contract Cookey {
         address addr;
         uint numFiles;
         mapping (uint => file) files;
-        }
+    }
     
     mapping(uint=>file) files;
-
-    // uint vaultID;
+    
+  
+   // uint vaultID;
     mapping (uint => Vault) Vaults;
 
    function newVault() public returns (uint vaultID) 
@@ -58,6 +60,7 @@ contract Cookey {
         //Vault[vaultID] = Vault(addr, 0);
         return vaultID;
     }
+    
     
     function storefile(string memory _IPFShash, string memory _FileTopic, address _beneficiary) public
         {
@@ -71,15 +74,15 @@ contract Cookey {
         
     function getfile(uint _fileID) public view returns(string memory IPFShash, string memory FileTopic,address  sender,  address  beneficiary)
     {
-        //if (msg.sender = files[_fileID].sender) 
-        return (files[_fileID].IPFShash, files[_fileID].FileTopic,files[_fileID].sender, files[_fileID].beneficiary);
+        if (msg.sender == files[_fileID].beneficiary)   
+        {return (files[_fileID].IPFShash, files[_fileID].FileTopic,files[_fileID].sender, files[_fileID].beneficiary);
         //return files[_fileID].sender;
-        //return files[_fileID].beneficiary;
-    }
+        //return files[_fileID].beneficiary;}
+    } }
     
     function getMyFiles (uint _fileID) public view returns (string memory)
     {
-        if (files[_fileID].sender == msg.sender)
+        if (files[_fileID].beneficiary == msg.sender)
      {return (files[_fileID].IPFShash);
          
      }
@@ -90,4 +93,5 @@ contract Cookey {
     {
         return files[vaultID].FileTopic;
     }
+
 }
