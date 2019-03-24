@@ -1,0 +1,12 @@
+//some testcode to retreave data from IPFS 
+
+const IPFS = require("ipfs-mini");
+const ipfs = new IPFS({host: "ipfs.infura.io", port: 5001, protocol: "https"});
+const hash = "QmctPyeaefbBdfnngKHWWzWS5R1mWErm8F1sKEr2iZ3NdG";
+ipfs.cat(hash, (err, data) => {
+ if (err) {
+   return console.log(err);
+ }
+ 
+ console.log('DATA:', data);
+});
