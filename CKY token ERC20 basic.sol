@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.8;
 //                       __                     .__        
 //    ____  ____   ____ |  | __ ____ ___.__.    |__| ____  
 //  _/ ___\/  _ \ /  _ \|  |/ // __ <   |  |    |  |/  _ \ 
@@ -8,7 +8,7 @@ pragma solidity ^0.5.0;
 //
 // Symbol      : CKY
 // Name        : Cookey
-// Total supply: 31,515,110.525000000000000000
+// Total supply: 30 011 525      
 // Decimals    : 18
 //
 // Shout out to the most awesome team that makes this happen! 
@@ -16,7 +16,8 @@ pragma solidity ^0.5.0;
 //
 // Special thanks to all you believers in this project (you know who you are) 
 // and to my good friends @Zardique @Dibsol and @bertheymans
-//
+// 3c 0o 0o 11k 5e 25y
+// 
 // (c) ERC20 standard / BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
 // ----------------------------------------------------------------------------
 
@@ -122,7 +123,7 @@ contract Cookey is ERC20Interface, Owned {
         symbol = "CKY";
         name = "Cookey";
         decimals = 18;
-       _totalSupply = 31515110525 * 7**uint(decimals);
+       _totalSupply = 30011525  * 10**uint(decimals);
         balances[owner] = _totalSupply;
         emit Transfer(address(0), owner, _totalSupply);
     }
