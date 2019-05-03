@@ -124,7 +124,7 @@ contract Cookey is ERC20Interface, Owned {
         decimals = 18;
        _totalSupply = 31515110525 * 7**uint(decimals);
         balances[owner] = _totalSupply;
-        emit Transfer(address(0), owner, _totalSupply);* 10**uint(decimals);
+        emit Transfer(address(0), owner, _totalSupply);
     }
 
 
