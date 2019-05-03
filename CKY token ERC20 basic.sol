@@ -7,9 +7,8 @@ pragma solidity ^0.5.0;
 // Total supply: 31,515,110.525000000000000000
 // Decimals    : 18
 //
-// Shout out to the most awesome team that makes this happen! Thanks brothers!
+// Shout out to the most awesome team that makes this happen! 
 // Steff (Germany) - Hamzat (Nigeria) - Robin Held (UK) - J (Germany) - Jesse (USA) - Flipsum/master (Slovenia) 
-// Oh yes, Bart Coelus is awesome too - and that happends to be me
 //
 // (c) ERC20 standard / BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
 // ----------------------------------------------------------------------------
@@ -98,9 +97,8 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and a
 // fixed supply
 // ----------------------------------------------------------------------------
-contract FixedSupplyToken is ERC20Interface, Owned {
+contract Cookey is ERC20Interface, Owned {
     using SafeMath for uint;
-
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -117,9 +115,9 @@ contract FixedSupplyToken is ERC20Interface, Owned {
         symbol = "CKY";
         name = "Cookey";
         decimals = 18;
-        _totalSupply = 31515110 * 10**uint(decimals);
+       _totalSupply = 31515110525 * 7**uint(decimals);
         balances[owner] = _totalSupply;
-        emit Transfer(address(0), owner, _totalSupply);
+        emit Transfer(address(0), owner, _totalSupply);* 10**uint(decimals);
     }
 
 
