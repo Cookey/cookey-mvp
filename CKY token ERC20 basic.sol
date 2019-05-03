@@ -1,6 +1,10 @@
 pragma solidity ^0.5.0;
-
-// ----------------------------------------------------------------------------
+//                       __                     .__        
+//    ____  ____   ____ |  | __ ____ ___.__.    |__| ____  
+//  _/ ___\/  _ \ /  _ \|  |/ // __ <   |  |    |  |/  _ \ 
+//  \  \__(  <_> |  <_> )    <\  ___/\___  |    |  (  <_> )
+//   \___  >____/ \____/|__|_ \\___  > ____| /\ |__|\____/ 
+//       \/                  \/    \/\/      \/            
 //
 // Symbol      : CKY
 // Name        : Cookey
@@ -8,7 +12,10 @@ pragma solidity ^0.5.0;
 // Decimals    : 18
 //
 // Shout out to the most awesome team that makes this happen! 
-// Steff (Germany) - Hamzat (Nigeria) - Robin Held (UK) - J (Germany) - Jesse (USA) - Flipsum/master (Slovenia) 
+// Steff (Germany) - Hamzat (Nigeria) - Robin Held (UK) -Flipsum/master (Slovenia) 
+//
+// Special thanks to all you believers in this project (you know who you are) 
+// and to my good friends @Zardique @Dibsol and @bertheymans
 //
 // (c) ERC20 standard / BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
 // ----------------------------------------------------------------------------
