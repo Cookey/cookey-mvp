@@ -4,12 +4,17 @@ pragma solidity ^0.5.8;
 //  _/ ___\/  _ \ /  _ \|  |/ // __ <   |  |    |  |/  _ \ 
 //  \  \__(  <_> |  <_> )    <\  ___/\___  |    |  (  <_> )
 //   \___  >____/ \____/|__|_ \\___  > ____| /\ |__|\____/ 
-//       \/                  \/    \/\/      \/            a
+//       \/                  \/    \/\/      \/            
+// https://t.me/joincookey     
 //
 // Symbol      : CKY
 // Name        : Cookey
 // Total supply: 30 011 525      
 // Decimals    : 18
+//
+// Cookey_ is a decentralised trustless filevault ecosystem 
+// that reveals data at a smart contract user programmed trigger or condition.
+//
 //
 // Shout out to the most awesome team that makes this happen! 
 // Steff (Germany) - Hamzat (Nigeria) - Robin Held (UK) -Flipsum/master (Slovenia) 
@@ -19,6 +24,12 @@ pragma solidity ^0.5.8;
 // 3c 0o 0o 11k 5e 25y
 // 
 // (c) ERC20 standard / BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
+//
+//
+// Governing the token within the Cookey ecosystem will be taken care of in a serparate contract
+// We know what we are doing - we don't think it's good to tweak token contracts and screw them up before they even run 
+// DAO governing and advanced value exchange will be handled in a separate contract - to be found at https://github.com/Cookey
+//
 // ----------------------------------------------------------------------------
 
 
